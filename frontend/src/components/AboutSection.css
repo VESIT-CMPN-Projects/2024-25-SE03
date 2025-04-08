@@ -1,0 +1,162 @@
+.about-section {
+  padding: 5rem 0;
+  background-color: #fff;
+}
+
+.about-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.about-image {
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.about-image:before {
+  content: '';
+  position: absolute;
+  top: 20px;
+  left: -20px;
+  right: 20px;
+  bottom: -20px;
+  border: 4px solid #3e7c5b;
+  z-index: -1;
+  border-radius: 10px;
+}
+
+.about-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 10px;
+  transition: transform 0.5s ease;
+}
+
+.about-image:hover img {
+  transform: scale(1.03);
+}
+
+.about-text {
+  padding: 0 1rem;
+}
+
+.about-text .section-heading {
+  text-align: left;
+  margin-bottom: 2rem;
+}
+
+.about-text .section-heading h2 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 1rem;
+  position: relative;
+  display: inline-block;
+}
+
+.about-text .section-heading h2:after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 70px;
+  height: 3px;
+  background-color: #3e7c5b;
+}
+
+.about-text h3 {
+  font-size: 1.5rem;
+  color: #3e7c5b;
+  margin-bottom: 1rem;
+  margin-top: 1.5rem;
+}
+
+.about-text p {
+  color: #666;
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+}
+
+.about-stats {
+  display: flex;
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.stat-box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.stat-number {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #e76f51;
+  line-height: 1;
+}
+
+.stat-text {
+  font-size: 0.9rem;
+  color: #666;
+  margin-top: 0.5rem;
+}
+
+.btn-outline {
+  background-color: transparent;
+  color: #3e7c5b;
+  border: 2px solid #3e7c5b;
+  padding: 0.8rem 2rem;
+  border-radius: 5px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: inline-block;
+  margin-top: 1rem;
+}
+
+.btn-outline:hover {
+  background-color: #3e7c5b;
+  color: white;
+}
+
+@media (max-width: 992px) {
+  .about-content {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+  
+  .about-image {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .about-text .section-heading {
+    text-align: center;
+  }
+  
+  .about-text .section-heading h2:after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 768px) {
+  .about-section {
+    padding: 4rem 0;
+  }
+  
+  .about-stats {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .about-text h3 {
+    font-size: 1.3rem;
+  }
+} 

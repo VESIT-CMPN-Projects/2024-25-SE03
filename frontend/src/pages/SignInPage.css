@@ -1,0 +1,247 @@
+.signin-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1rem;
+  background-color: #f9f9f9;
+}
+
+.signin-container {
+  display: flex;
+  max-width: 1000px;
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  min-height: 600px;
+}
+
+.signin-content {
+  flex: 1;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #fff;
+  position: relative;
+  z-index: 10;
+}
+
+.signin-header {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.signin-header h1 {
+  font-size: 2.2rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.signin-header p {
+  color: #666;
+  font-size: 1rem;
+}
+
+.signin-form {
+  margin-bottom: 1.5rem;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #333;
+  font-weight: 500;
+}
+
+.input-group {
+  position: relative;
+}
+
+.input-group i {
+  position: absolute;
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #999;
+  z-index: 2;
+}
+
+.input-wrapper {
+  position: relative;
+  z-index: 2;
+  background-color: #fff;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 0.8rem 1rem 0.8rem 2.5rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+  color: #333;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  background-color: #fff;
+  position: relative;
+  z-index: 2;
+}
+
+.input-group input:focus {
+  outline: none;
+  border-color: #3e7c5b;
+  box-shadow: 0 0 0 2px rgba(62, 124, 91, 0.2);
+}
+
+.form-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.remember-me {
+  display: flex;
+  align-items: center;
+}
+
+.remember-me input {
+  margin-right: 0.5rem;
+}
+
+.forgot-password {
+  color: #3e7c5b;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.3s ease;
+}
+
+.forgot-password:hover {
+  color: #2a5540;
+  text-decoration: underline;
+}
+
+.signin-btn {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.signin-btn i {
+  font-size: 1rem;
+}
+
+.signup-link {
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+.signup-link p {
+  color: #666;
+  font-size: 0.95rem;
+}
+
+.signup-link a {
+  color: #3e7c5b;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.signup-link a:hover {
+  text-decoration: underline;
+  color: #2a5540;
+}
+
+.signin-image {
+  flex: 1;
+  background-image: url('https://source.unsplash.com/random/800x1200/?volunteer,children');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  z-index: 1;
+}
+
+.image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(62, 124, 91, 0.8), rgba(231, 111, 81, 0.8));
+  opacity: 0.8;
+}
+
+.error-message {
+  background-color: #feecec;
+  padding: 1rem;
+  border-radius: 5px;
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.8rem;
+}
+
+.error-message i {
+  font-size: 1.2rem;
+  color: #e74c3c;
+  margin-top: 0.2rem;
+}
+
+.error-message p {
+  color: #e74c3c;
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+.success-message {
+  background-color: #e8f5e9;
+  padding: 1rem;
+  border-radius: 5px;
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.8rem;
+}
+
+.success-message i {
+  font-size: 1.2rem;
+  color: #4caf50;
+  margin-top: 0.2rem;
+}
+
+.success-message p {
+  color: #4caf50;
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+@media (max-width: 992px) {
+  .signin-container {
+    flex-direction: column;
+    max-width: 500px;
+  }
+  
+  .signin-image {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .signin-content {
+    padding: 2rem;
+  }
+  
+  .signin-header h1 {
+    font-size: 1.8rem;
+  }
+} 
