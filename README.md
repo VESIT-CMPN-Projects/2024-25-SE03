@@ -127,11 +127,7 @@ parvarish-ngo/
 - Protected routes
 - User profile management
 
-### Admin Dashboard
-- Program management
-- User management
-- Content updates
-- Analytics dashboard
+
 
 
 ## 👥 Team
