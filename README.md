@@ -131,11 +131,11 @@ parvarish-ngo/
 
 
 ## 👥 Team
-Dr. Sujata Khedkar (Mentor)
-Harsh Dhebe
-Sejal Chaudhari
-Gauri Doiphode
-Dev Ramchandani
+- Dr. Sujata Khedkar (Mentor)
+- Harsh Dhebe
+- Sejal Chaudhari
+- Gauri Doiphode
+- Dev Ramchandani
 
 
 
