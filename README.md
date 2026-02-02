@@ -31,6 +31,11 @@ Watch our project demo video to see the application in action:
 
 > Click the link above to check the full figma design on Figma.
 
+## 🎨 Poster Design Guide
+[View Poster Guide](./POSTER_GUIDE.md) | [Edit Canva Template](https://www.canva.com/design/DAG_sETq7X0/bmX1D_oo3M2YzokU0g9W_g/edit)
+
+> Create promotional posters and visual materials for Parvarish NGO. Check our comprehensive poster guide for design guidelines, templates, and best practices.
+
 
 ## 🚀 Tech Stack
 
